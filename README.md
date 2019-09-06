@@ -54,7 +54,7 @@ $ git push -u origin feature-53 //ブランチをリモートに登録
 
 ```bash
 $ git fetch // リモートの変更をローカルに取り込む
-$ git rebase origin/develop
+$ git rebase origin develop
 ```
 
 わからない箇所がある場合、`自分で記事を調べる`こと
