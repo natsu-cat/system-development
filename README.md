@@ -15,7 +15,7 @@ PRはレビュー後 `develop` にマージされ, その後適切なタイミ�
 
 ```bash
 $ git clone @各自Forkしたsystem-developmentのリポジトリのurl // わからなかったらgit cloneで調べて
-$ git remote add upstream git@github.com:2D-4/system-development.git // organizationのリポジトリをupstream名にして登録
+$ git remote add upstream git@github.com:2D-4/system-development.git // 上流のリポジトリを登録
 ```
 ちなみに設定は、
 ```bash
