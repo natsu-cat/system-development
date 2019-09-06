@@ -28,7 +28,7 @@ $ git config --global user.email <mail> // <mail>にメールアドレス
 
 - For Example
 
-`\#53 データベースとの通信を確立する`というissueを割り当てられたとする
+`#53 データベースとの通信を確立する`というissueを割り当てられたとする
 
 ```bash
 $ git checkout -b feature-53 // checkout でブランチの切り替えができ、 -b のオプションでブランチの作成も同時にできる
