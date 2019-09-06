@@ -30,7 +30,7 @@ $ git config --global user.email <mail> # <mail>にメールアドレス
 
 ### 作業の流れ
 
-####For Example
+For Example
 
 `#53 データベースとの通信を確立する`というissueを割り当てられたとする.
 
@@ -54,12 +54,13 @@ $ git push -u origin feature-53 # ブランチをリモートに登録
 
 ### リモートの変更を取り込む
 
-自分の変更を取り込む前に、他人の変更が入る場合があ理、その時はリモートの変更を取り込む必要がある.
+自分の変更を取り込む前に、他人の変更が入る場合があり、その時はリモートの変更を取り込む必要がある.
 
 ```bash
 $ git branch develop # developに切り替え
-$ git fetch upstream # 上流の変更を自分のリモートに取り込む
-$ git rebase origin develop # ローカルのdevelopに他人の変更を追加
+$ git fetch upstream # 上流の変更を自分のローカルに取り込む
+$ git merge upstream/develop # ローカルのdevelopに他人の変更を追加
+$ git push origin develop # 自分のリモートにも変更を追加
 ```
 
 わからない箇所がある場合、`自分で記事を調べる`こと(極力)
