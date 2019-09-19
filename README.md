@@ -58,8 +58,14 @@ $ git push -u origin feature-53 # ブランチをリモートに登録
 
 ```bash
 $ git branch develop # developに切り替え
+---------------------------------------
 $ git fetch upstream # 上流の変更を自分のローカルに取り込む
 $ git merge upstream/develop # ローカルのdevelopに他人の変更を追加
+---------------------------------------
+#↑の---間の作業について.
+$ git pull upstream develop #の方が一般的かもしれない
+
+#で最後に
 $ git push origin develop # 自分のリモートにも変更を追加
 ```
 
