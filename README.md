@@ -57,7 +57,7 @@ $ git push -u origin feature-53 # ブランチをリモートに登録
 自分の変更を取り込む前に、他人の変更が入る場合があり、その時は上流の変更を取り込む必要がある.
 
 ```bash
-$ git branch develop # developに切り替え
+$ git checkout develop # developに切り替え
 ---------------------------------------
 $ git fetch upstream # 上流の変更を自分のローカルに取り込む
 $ git merge upstream/develop # ローカルのdevelopに他人の変更を追加
