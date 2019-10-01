@@ -58,7 +58,8 @@ $ git push -u origin feature-53 # ブランチをリモートに登録
 Slackの #notice にMergeの通知が来たらしようね。
 
 ```bash
-$ git branch develop # 作業中のブランチからdevelopに切り替え
+$ git checkout develop # developに切り替え
+
 # ここからやり方が２通りある
 # やり方①
 $ git fetch upstream # 上流リポジトリの変更を自分のローカルに取り込む
