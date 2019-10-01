@@ -55,18 +55,23 @@ $ git push -u origin feature-53 # ブランチをリモートに登録
 ### リモートの変更を取り込む
 
 自分の変更を取り込む前に、他人の変更が入る場合があり、その時は上流の変更を取り込む必要がある.
+Slackの #notice にMergeの通知が来たらしようね。
 
 ```bash
-$ git branch develop # developに切り替え
----------------------------------------
-$ git fetch upstream # 上流の変更を自分のローカルに取り込む
+$ git branch develop # 作業中のブランチからdevelopに切り替え
+# ここからやり方が２通りある
+# やり方①
+$ git fetch upstream # 上流リポジトリの変更を自分のローカルに取り込む
 $ git merge upstream/develop # ローカルのdevelopに他人の変更を追加
----------------------------------------
-#↑の---間の作業について.
-$ git pull upstream develop #の方が一般的かもしれない
 
-#で最後に
-$ git push origin develop # 自分のリモートにも変更を追加
+# やり方②
+$ git pull upstream develop #こっちの方が一般的かもしれない
+
+# pullコマンドはfetchコマンドとmergeコマンドをどっちも行なっている
+# つまり、ブランチの情報だけ取得したい(mergeしたくない)時はやり方①を使う
+
+# そして最後に
+$ git push origin develop # 自分のリモートリポジトリにも変更を追加
 ```
 
 わからない箇所がある場合、`自分で記事を調べる`こと
