@@ -1,7 +1,7 @@
 # astah
-/documents/*.asta
-/documents/*.bak
-/documents/*.lock
+/doc/*.asta
+/doc/*.bak
+/doc/*.lock
 
 
 ## Ignore Visual Studio temporary files, build results, and
