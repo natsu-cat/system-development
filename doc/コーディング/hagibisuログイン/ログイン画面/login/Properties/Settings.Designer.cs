@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace home.Properties
+namespace login.Properties
 {
 
 
