@@ -97,7 +97,7 @@
             this.fSSigninBtn.UseVisualStyleBackColor = true;
             this.fSSigninBtn.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // Form1
+            // frmSignin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -108,7 +108,7 @@
             this.Controls.Add(this.fSIdTBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "frmSignin";
             this.Text = "ログイン画面";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
