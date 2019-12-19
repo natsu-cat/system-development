@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
 using System.Security.Cryptography;
 using System.Data.OleDb;
 
@@ -42,3 +43,13 @@ namespace habigisu
         }
     }
 }
+=======
+
+namespace habigisu
+{
+    
+    class PasswordHash
+    {
+    }
+}
+>>>>>>> make passwordhash class
