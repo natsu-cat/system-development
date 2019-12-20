@@ -359,3 +359,6 @@ MigrationBackup/
 
 # Windows
 .DS_Store
+
+# Access lock file
+.laccdb
