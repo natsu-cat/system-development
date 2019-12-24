@@ -1,4 +1,5 @@
-﻿using System;
+﻿using habigisu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,11 +58,24 @@ namespace login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            habigisu.PasswordHash ph = new habigisu.PasswordHash();
+            SaltSelector ss = new SaltSelector();
+            PasswordHash ph = new PasswordHash();
 
             string eid = fSIdTBox.Text;
             string pwd = fSPassTBox.Text;
-            string hashstr = ph.PasswordToHash(eid, pwd);
+            string salt = ss.getSalt(eid);
+            if (salt == "\0")
+            {
+                MessageBox.Show("社員番号、もしくはパスワードが間違っているか、存在しません。");
+                return;
+            }
+            else if (salt == "error")
+            {
+                MessageBox.Show("プログラム作成者にご連絡ください。");
+                return;
+            }
+            string pwdhash = ph.GeneratePasswordHash(pwd, salt);
+            Console.WriteLine(pwdhash);
         }
 
         private void btnCansel_Click(object sender, EventArgs e)

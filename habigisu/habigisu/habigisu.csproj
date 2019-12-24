@@ -53,6 +53,7 @@
       <DependentUpon>frmSignin.cs</DependentUpon>
     </Compile>
     <Compile Include="PasswordHash.cs" />
+    <Compile Include="SaltSelector.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmSignin.resx">
